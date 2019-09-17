@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Sprite.gd" type="Script" id=2]
+
+[node name="DisapearingBoy" type="Sprite"]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+speed = 50.0
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
