@@ -3,3 +3,4 @@
 [node name="FollowBoi" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 384.142, 247.187 )

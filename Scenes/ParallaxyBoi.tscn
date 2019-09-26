@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scenes/ParallaxyBoi.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Background/cloud2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Background/cloud4.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Background/cloud6.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Background/castle_grey.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Background/hills1.png" type="Texture" id=6]
+[ext_resource path="res://icon.png" type="Texture" id=7]
+
+[node name="ParallaxyBoi" type="Node2D"]
+script = ExtResource( 1 )
+speed = 100.0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 1 )
+
+[node name="cloud2" type="Sprite" parent="ParallaxBackground/Clouds"]
+position = Vector2( 134.05, 123.85 )
+texture = ExtResource( 2 )
+
+[node name="cloud4" type="Sprite" parent="ParallaxBackground/Clouds"]
+position = Vector2( 551.101, 264.45 )
+texture = ExtResource( 3 )
+
+[node name="cloud6" type="Sprite" parent="ParallaxBackground/Clouds"]
+position = Vector2( 675.551, 83.9501 )
+texture = ExtResource( 4 )
+
+[node name="Castle" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
+
+[node name="castle_grey" type="Sprite" parent="ParallaxBackground/Castle"]
+position = Vector2( 825.837, 487.529 )
+texture = ExtResource( 5 )
+
+[node name="Floor" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="hills1" type="Sprite" parent="ParallaxBackground/Floor"]
+position = Vector2( 514.501, 553.062 )
+texture = ExtResource( 6 )
+
+[node name="icon" type="Sprite" parent="."]
+position = Vector2( 517.171, 305.385 )
+texture = ExtResource( 7 )

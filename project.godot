@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Sprite",
+"class": "AcceleratingSprite",
+"language": "GDScript",
+"path": "res://Scenes/Boy.gd"
+}, {
 "base": "Button",
 "class": "CloseButton",
 "language": "GDScript",
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://addons/WAT/test/test.gd"
 } ]
 _global_script_class_icons={
+"AcceleratingSprite": "",
 "CloseButton": "",
 "SceneButton": "",
 "WATTest": ""

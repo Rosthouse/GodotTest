@@ -1,4 +1,5 @@
 extends Sprite
+class_name AcceleratingSprite
 
 export var acceleration: float = 0
 export var max_velocity: float = 0
