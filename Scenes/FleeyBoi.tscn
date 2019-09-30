@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/SeekyBoi.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Fleeer.gd" type="Script" id=3]
+
+[node name="FleeyBoi" type="Node2D"]
+script = ExtResource( 1 )
+target_node = NodePath("Target")
+
+[node name="Fleeer" type="Sprite" parent="."]
+position = Vector2( 490, 280 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+target_node = NodePath("../Target")
+mass = 5.0
+max_force = 1.0
+max_speed = 5.0
+
+[node name="Target" type="Position2D" parent="."]
+position = Vector2( 580, 330 )
