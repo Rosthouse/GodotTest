@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Fleeer.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Steering/Fleeer.gd" type="Script" id=2]
 [ext_resource path="res://Body1.gd" type="Script" id=3]
+
 
 
 

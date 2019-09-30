@@ -22,7 +22,7 @@ _global_script_classes=[ {
 "base": "Seeker",
 "class": "Fleeer",
 "language": "GDScript",
-"path": "res://Scenes/Fleeer.gd"
+"path": "res://Scenes/Steering/Fleeer.gd"
 }, {
 "base": "Button",
 "class": "SceneButton",
@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Sprite",
 "class": "Seeker",
 "language": "GDScript",
-"path": "res://Scenes/Seeker.gd"
+"path": "res://Scenes/Steering/Seeker.gd"
 }, {
 "base": "Node",
 "class": "WATTest",
