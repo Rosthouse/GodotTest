@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/SeekyBoi.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Seeker.gd" type="Script" id=3]
+
+[node name="SeekyBoi" type="Node2D"]
+script = ExtResource( 1 )
+target_node = NodePath("Position2D")
+
+[node name="Seeker" type="Sprite" parent="."]
+position = Vector2( 50, 50 )
+rotation = 0.785398
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+target_node = NodePath("../Position2D")
+mass = 5.0
+max_force = 5.0
+max_speed = 5.0
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 240, 150 )
