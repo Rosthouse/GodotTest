@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Steering/Pursuer.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Steering/Prey.gd" type="Script" id=3]
+
+[node name="PursuityBoi" type="Node2D"]
+
+[node name="Pursuer" type="Sprite" parent="."]
+position = Vector2( 340, 340 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Prey" type="Sprite" parent="."]
+position = Vector2( 630, 400 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+angle_per_second = 20.0
+target = NodePath("../RotationCenter")
+
+[node name="RotationCenter" type="Position2D" parent="."]
+position = Vector2( 372, 220 )

@@ -1,3 +1,4 @@
+# Based on: http://www.red3d.com/cwr/steer/gdc99/
 extends Sprite
 class_name Seeker
 
