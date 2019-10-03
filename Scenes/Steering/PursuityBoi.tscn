@@ -12,10 +12,10 @@ texture = ExtResource( 1 )
 script = ExtResource( 2 )
 target_node = NodePath("../Prey")
 mass = 10.0
-max_force = 20.0
+max_force = 10.0
 max_speed = 5.0
 debug = true
-t = 500.0
+t = 0.5
 
 [node name="Prey" type="Sprite" parent="."]
 position = Vector2( 630, 400 )
