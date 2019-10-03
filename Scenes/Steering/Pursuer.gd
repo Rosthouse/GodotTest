@@ -1,13 +1,15 @@
 extends Seeker
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var t: float = 0
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+var target_previous_position: Vector2
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _ready() -> void:
+	._ready()
+	target_previous_position = self.target.position
+
+func get_direction() -> Vector2:
+	var direction = self.target.position + self.target_previous_position
+	var predicted_target = self.target.position + direction * t
+	self.previous_position = self.target.position
+	return (predicted_target - self.position).normalized()
