@@ -7,21 +7,21 @@
 [node name="PursuityBoi" type="Node2D"]
 
 [node name="Pursuer" type="Sprite" parent="."]
-position = Vector2( 340, 340 )
+position = Vector2( 724.75, 195.6 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 target_node = NodePath("../Prey")
 mass = 10.0
-max_force = 5.0
-max_speed = 2.0
+max_force = 20.0
+max_speed = 5.0
 debug = true
-t = 3.0
+t = 500.0
 
 [node name="Prey" type="Sprite" parent="."]
 position = Vector2( 630, 400 )
 texture = ExtResource( 1 )
 script = ExtResource( 3 )
-angle_per_second = 20.0
+angle_per_second = 50.0
 target = NodePath("../RotationCenter")
 
 [node name="RotationCenter" type="Position2D" parent="."]
